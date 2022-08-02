@@ -33,6 +33,7 @@
     <link rel="stylesheet" href="/static/css/jquery.datetimepicker.css">
     <link rel="stylesheet" href="/static/css/search-display-task_style.css">
     <link rel="stylesheet" href="/static/css/hr-profile_style.css">
+    <link rel="stylesheet" href="/static/css/nav-bar_style.css">
     
 
     <title>mTracker</title>
@@ -46,7 +47,7 @@
                     <img src="/static/img/mTracker.png">
                 </a>
                 <a href="#" data-target="mobile-side-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                <ul class="right hide-on-med-and-down">
+                <ul class="right hide-on-med-and-down nav_items">
                     {% if user.is_authenticated %}
                     <li><a href="{% url 'home' %}">Home</a></li>
                     <li><a href="{% url 'create' %}">Create</a></li>
