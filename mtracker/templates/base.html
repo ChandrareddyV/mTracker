@@ -42,7 +42,7 @@
     <div class="navbar-fixed">
         <nav>
             <div class="nav-wrapper">
-                <a href="#!" class="brand-logo">
+                <a href="{% url 'home' %}" class="brand-logo">
                     <img src="/static/img/mTracker.png">
                 </a>
                 <a href="#" data-target="mobile-side-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
@@ -52,7 +52,7 @@
                     <li><a href="{% url 'create' %}">Create</a></li>
                     <li><a href="{% url 'search'%}">Search Tasks</a></li>
                     
-                    <li><a href="{% url 'profile'%}">Profile</a></li>
+                    <li><a href="{% url 'profile'%}">Hi, {{request.user.first_name}}</a></li>
                     <li><a href="{% url 'logout'%}">Logout</a></li>
                     {% else %}
                     <li><a href="{% url 'login'%}">Login</a></li>
